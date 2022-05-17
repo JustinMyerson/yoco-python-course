@@ -26,6 +26,7 @@ As an admin, I can go to a dashboard page where I can edit all the site’s prod
 - GET admin/products
 
 As an admin, I can go to a page where I can add a new dog food (what is the URL of the page I am on when I am typing in the new dog food details?)
-- POST /products/dogfood?productId={productId}
+- GET admin/products/dogfood
 
 As an admin, I can save a new dog food (what is the verb + route of the request that’s triggered when I click “Save”?)
+GET admin/products/dogfood
