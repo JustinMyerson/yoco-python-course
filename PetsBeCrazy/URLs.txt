@@ -1,0 +1,29 @@
+As a shopper, I can go to the homepage of the store
+- GET /homepage
+
+As a shopper, I can go to a page showing the store’s recommended dog foods
+- GET products/dogfood/recommended
+
+As a shopper, I can go to a page showing the dog foods that are on sale
+- GET products/dogfood/sale
+
+As a shopper, I can go to a page showing only Hills brand dog foods
+- GET products/dogfood?props=Hills
+
+As a shopper, I can go to a page showing all dog foods except for Montego brand dog foods
+- GET products/dogfood?excludeProps=Montego
+
+As a shopper, I can go to a page showing all cat foods
+- GET products/catfood
+
+As a shopper, I can search for products containing the text “puppy”
+GET products?query-param=puppy
+
+As a shopper, I can search for dog foods containing the text “puppy”
+- GET products/dogfood?query-param=puppy
+
+As an admin, I can go to a dashboard page where I can edit all the site’s products
+- GET admin/products
+
+As an admin, I can go to a page where I can add a new dog food (what is the URL of the page I am on when I am typing in the new dog food details?)
+- POST /products/dogfood?productId={productId}
