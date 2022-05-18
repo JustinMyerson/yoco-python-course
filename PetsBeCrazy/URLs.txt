@@ -30,3 +30,8 @@ As an admin, I can go to a page where I can add a new dog food (what is the URL 
 
 As an admin, I can save a new dog food (what is the verb + route of the request that’s triggered when I click “Save”?)
 GET admin/products/dogfood
+{
+  "Id": 78912,
+  "Product": "Kleinsky's Hot Dog",
+  "Price": 78.00
+}
