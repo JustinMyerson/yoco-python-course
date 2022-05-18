@@ -4,6 +4,7 @@ from rot13 import rot13
 
 
 class rot13Tests(unittest.TestCase):
+
     def test_phrase(self):
         self.assertEqual(rot13("abcde"), "nopqr")
 

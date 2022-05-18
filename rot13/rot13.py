@@ -24,5 +24,6 @@ def rot13(plaintext: str) -> str:
     return decrypted_text
 
 
-print(rot13("ohvyqvat n jro NCV sebz fpengpu"))
-print(rot13("n arj fbpvny zrqvn cyngsbez"))
+if __name__ == "__main__":
+    print(rot13("ohvyqvat n jro NCV sebz fpengpu"))
+    print(rot13("n arj fbpvny zrqvn cyngsbez"))
