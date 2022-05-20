@@ -11,7 +11,7 @@ Tk().withdraw()
 directory = askdirectory(title="Directory")
 
 
-def rm(file_name):
+def rm(directory):
     for root, dirs, files in os.walk(directory):
         for file_name in files:
             file = os.path.join(root, file_name)
@@ -22,3 +22,7 @@ def rm(file_name):
                 print(f"Duplicate {file} has been removed")
             else:
                 hash_list.append(current_file_hash)
+
+
+if __name__ == "__main__":
+    rm(directory)
