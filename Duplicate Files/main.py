@@ -13,13 +13,10 @@ directory = askdirectory(title="Directory")
 
 def rm(directory):
     for root, dirs, files in os.walk(directory):
-        print(root, dirs, files)
         for file_name in files:
-            print(file_name)
             file = os.path.join(root, file_name)
             current_file_hash = hashlib.md5(
                 open(file, "rb").read()).hexdigest()  # rb opens the binary file in read format
-            print(current_file_hash, " test")
             if current_file_hash in hash_list:
                 os.remove(file)
                 print(f"Duplicate {file} has been removed")
